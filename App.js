@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textStyle: {
-    fontFamily: "extrabold",
+    fontFamily: 'extrabold',
     fontSize: 20,
   }
 });

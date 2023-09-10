@@ -25,6 +25,7 @@ const screenOptions = {
 const BottomTabNavigation = () => {
   return (
     <Tab.Navigator>
+
       <Tab.Screen
         name="Home"
         component={Home}
@@ -37,8 +38,30 @@ const BottomTabNavigation = () => {
           }
         }}
         />
-      <Tab.Screen name="Search" component={Search}/>
-      <Tab.Screen name="Profile" component={Profile}/>
+      <Tab.Screen
+        name="Search"
+        component={Search}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return <Ionicons name={"search-sharp"}
+            size={24}
+            color={focused ? COLORS.primary : COLORS.gray2}
+            />
+          }
+        }}
+        />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return <Ionicons name={focused ? "person" : "person-outline"}
+            size={24}
+            color={focused ? COLORS.primary : COLORS.gray2}
+            />
+          }
+        }}
+        />
     </Tab.Navigator>
   )
 }

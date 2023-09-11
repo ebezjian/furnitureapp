@@ -1,9 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
-import Search from '../screens/Search';
-import Profile from '../screens/Profile';
+import {Home, Profile, Search} from "../screens";
 import {Ionicons} from "@expo/vector-icons";
 import {COLORS} from "../constants/index";
 
